@@ -25,7 +25,7 @@ from paho.mqtt.client import Client
 import json
 from load_control import control_gateway
 
-rdisLora = redis.Redis(host='localhost', port=6379, decode_responses=True)
+rdisLora = redis.Redis(host='98.70.76.242', port=6379, password="Bfl@2024#redis" ,decode_responses=True)
 redismode = rdisLora.get("mode")
 # Global variable to signal the script to stop
 stop_script = False

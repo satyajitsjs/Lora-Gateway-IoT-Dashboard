@@ -9,7 +9,7 @@ from django.dispatch import receiver
 from django.db.models.signals import pre_save
 import redis
 from django.core.exceptions import ValidationError
-redisLora = redis.Redis(host='localhost', port=6379, decode_responses=True)
+redisLora = redis.Redis(host='98.70.76.242', port=6379, password="Bfl@2024#redis" ,decode_responses=True)
 
 
 class DeviceModel(models.Model):

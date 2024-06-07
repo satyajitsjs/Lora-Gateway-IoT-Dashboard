@@ -52,7 +52,7 @@ class UtilFunctions:
 
     # Publish the mqtt Data if some data save in database
     def publish_data(instance):
-        r = redis.StrictRedis(host=settings.REDIS_HOST,port=settings.REDIS_PORT,db=settings.REDIS_DB)
+        r = redis.StrictRedis(host=settings.REDIS_HOST,port=settings.REDIS_PORT,password=settings.REDIS_PASSWORD,db=settings.REDIS_DB)
         is_publish = r.get("is_publish")
         if int(is_publish) == 1:
             mq = MqttConnect()

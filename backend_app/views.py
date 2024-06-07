@@ -23,7 +23,7 @@ import threading
 from django.conf import settings
 from load_control import control_load,control_network
 
-r = redis.Redis(host='localhost', port=6379, decode_responses=True)
+r = redis.Redis(host='98.70.76.242', port=6379, password="Bfl@2024#redis" ,decode_responses=True)
 
 from .models import (
     DeviceModel, 

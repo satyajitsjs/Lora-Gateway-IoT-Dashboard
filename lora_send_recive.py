@@ -12,7 +12,7 @@ from Crypto.Util.Padding import unpad , pad
 import json
 from datetime import datetime
 import redis
-rdisLora = redis.Redis(host='localhost', port=6379, decode_responses=True)
+rdisLora = redis.Redis(host='98.70.76.242', port=6379, password="Bfl@2024#redis" ,decode_responses=True)
 rdisLora.set("mode","Sleep")
 
 
